@@ -1,0 +1,277 @@
+/* RESETEO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+}
+
+/* FUENTE */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+
+header {
+    background-image: linear-gradient(rgba(7, 0, 37, 0.863), rgba(17, 16, 68, 0.5)), url(../img/backgroundnav.png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+.logo {
+    height: 4rem;
+    margin: 3rem;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLi {
+    margin: 3rem;
+}
+
+.menuNav {
+    color: white;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    padding: 0.7rem 1rem;
+    transition: all 0.4s;
+}
+
+/* BANNER */
+
+.presentacionContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 8.5rem 7%;
+}
+
+.titlePresentacion {
+    letter-spacing: 0.1rem;
+    font-size: 4.5rem;
+    font-weight: 600;
+    margin-top: 0.9rem;
+    animation: titlePresentacion 1.5s ease 0s 1 normal forwards;
+}
+
+/* @keyframes titlePresentacion {
+    0% {
+        opacity: 0;
+        transform: translateX(250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+.parrafoPresentacion {
+    font-size: 2.1rem;
+    font-weight: 350;
+    font-style: italic;
+    letter-spacing: 0.1rem;
+    margin-top: 1.6rem;
+    animation: titleParrafo 1.5s ease 0s 1 normal forwards;
+}
+
+/* @keyframes titleParrafo {
+    0% {
+        opacity: 0;
+        transform: translateX(-250px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+} */
+
+.containerFlecha {
+    margin-top: 8rem;
+}
+
+.flecha {
+    display: flex;
+    font-size: 2rem;
+    justify-content: center;
+    transition: all 0.4s;
+    animation: Flecha 1s ease-in 0s 1 normal forwards;
+}
+
+.flechaText {
+    font-size: 1.5rem;
+    font-weight: 300;
+    transition: all 0.4s;
+    animation: Flecha 2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes Flecha {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ACERCA DE MI */
+
+.acercademi {
+    background-color: #0a0016;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleMe {
+    color: white;
+    font-size: 2.7rem;
+    margin-top: 3rem;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+
+.icoMe {
+    color: white;
+    margin-left: 1.3rem;
+    font-size: 3.1rem;
+}
+
+.parrafoMe {
+    margin: 0rem 15%;
+    color: white;
+    text-align: start;
+    font-size: 1.4rem;
+    margin-top: 1.5rem;
+    line-height: 2rem;
+}
+
+.conocimientos {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 10rem;
+    flex-flow: row wrap;
+}
+
+.conocimientos img {
+    height: 5rem;
+    background-color: white;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.containerSkill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 2.6rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 1.7rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.062);
+    padding-top: 4rem;
+}
+
+.imgProfile {
+    display: flex;
+    max-width: 15rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1.5rem;
+    transition: all 0.8s;
+    filter: grayscale(100%);
+}
+
+.titleDw {
+    font-size: 2.7rem;
+    text-align: start;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+
+.containerHashtags {
+    margin: 3rem 15%;
+    margin-bottom: 4rem;
+
+}
+
+.containerHashtags ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1.4rem;
+    letter-spacing: 0.1rem;
+}
+
+.hashtags {
+    text-align: center;
+    margin: 3rem 2.6rem;
+    letter-spacing: 0.1rem;
+}
+
+/* FOOTER */
+
+.footer {
+    background-color: rgb(20, 20, 20);
+}
+
+
+/* HOVERS */
+
+.menuNav:hover {
+    color: #919191;
+}
+
+.flecha:hover,
+.flechaText:hover {
+    color: #919191;
+}
+
+.conocimientos Img:hover {
+    transform: scale(1.3);
+    border-radius: 1.2rem;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(323deg) brightness(103%) contrast(101%);
+    border: #0a0016 0.2rem solid;
+    background-color: rgba(240, 248, 255, 0);
+}
+
+.imgProfile:hover {
+    filter: none;
+    transform: rotate(17deg);
+
+}
