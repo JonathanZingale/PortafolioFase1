@@ -22,7 +22,7 @@ html {
 /* NAVBAR */
 
 header {
-    background-image: linear-gradient(rgba(7, 0, 37, 0.863), rgba(17, 16, 68, 0.5)), url(../img/backgroundnav.png);
+    background-image: linear-gradient(rgba(8, 0, 46, 0.97), rgba(17, 16, 68, 0.960)), url(../img/backgroundnav.png);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,12 +33,24 @@ header {
 .logo {
     height: 4rem;
     margin: 3rem;
+    animation: animacionEntrada 3s ease 0s 1 normal forwards;
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    animation: animacionEntrada 1s ease 0s 1 normal forwards;
+}
+
+@keyframes animacionEntrada {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
 }
 
 .navLi {
@@ -73,7 +85,7 @@ header {
     animation: titlePresentacion 1.5s ease 0s 1 normal forwards;
 }
 
-/* @keyframes titlePresentacion {
+@keyframes titlePresentacion {
     0% {
         opacity: 0;
         transform: translateX(250px);
@@ -83,7 +95,7 @@ header {
         opacity: 1;
         transform: translateX(0);
     }
-} */
+}
 
 .parrafoPresentacion {
     font-size: 2.1rem;
@@ -94,7 +106,7 @@ header {
     animation: titleParrafo 1.5s ease 0s 1 normal forwards;
 }
 
-/* @keyframes titleParrafo {
+@keyframes titleParrafo {
     0% {
         opacity: 0;
         transform: translateX(-250px);
@@ -104,7 +116,7 @@ header {
         opacity: 1;
         transform: translateX(0);
     }
-} */
+}
 
 .containerFlecha {
     margin-top: 8rem;
@@ -112,27 +124,13 @@ header {
 
 .flecha {
     display: flex;
-    font-size: 2rem;
+    flex-direction: column-reverse;
+    font-size: 1.7rem;
     justify-content: center;
     transition: all 0.4s;
-    animation: Flecha 1s ease-in 0s 1 normal forwards;
-}
-
-.flechaText {
-    font-size: 1.5rem;
-    font-weight: 300;
-    transition: all 0.4s;
-    animation: Flecha 2s ease-in 0s 1 normal forwards;
-}
-
-@keyframes Flecha {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
+    font-weight: 200;
+    font-style: normal;
+    animation: animacionEntrada 3s ease 0s 1 normal forwards;
 }
 
 /* ACERCA DE MI */
@@ -274,4 +272,8 @@ header {
     filter: none;
     transform: rotate(17deg);
 
+}
+
+.flecha:hover{
+    transform: translateY(8px);
 }
